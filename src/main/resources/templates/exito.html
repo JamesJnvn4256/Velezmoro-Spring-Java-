@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Exitoso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">¡Registro Exitoso!</h2>
+        <h4>Datos del Alumno Registrado:</h4>
+        <ul class="list-group mt-3">
+            <li class="list-group-item"><strong>Nombre:</strong> <span th:text="${Alumno.nombre}"></span></li>
+            <li class="list-group-item"><strong>Apellido Paterno:</strong> <span th:text="${Alumno.apellidoPaterno}"></span></li>
+            <li class="list-group-item"><strong>Apellido Materno:</strong> <span th:text="${Alumno.apellidoMaterno}"></span></li>
+            <li class="list-group-item"><strong>Fecha de Nacimiento:</strong> <span th:text="${Alumno.fechaNacimiento}"></span></li>
+            <li class="list-group-item"><strong>Lugar de Residencia:</strong> <span th:text="${Alumno.lugarResidencia}"></span></li>
+            <li class="list-group-item"><strong>Edad:</strong> <span th:text="${Alumno.edad}"></span></li>
+            <li class="list-group-item"><strong>Teléfono:</strong> <span th:text="${Alumno.telefono}"></span></li>
+            <li class="list-group-item"><strong>Correo Electrónico:</strong> <span th:text="${Alumno.email}"></span></li>
+        </ul>
+    </div>
+</body>
+</html>
